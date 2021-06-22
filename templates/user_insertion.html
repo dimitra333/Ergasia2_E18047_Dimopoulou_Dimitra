@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3 class="text-center title">Insert New User into DB</h3>
+
+<section>
+  <div class="container text-center">
+    <form method="post">
+      <div class="form-group">
+        <label>Give user's name: </label>
+
+        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+      </div>
+      <div class="form-group">
+        <label>Give user's email: </label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label>Give user's password: </label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+      </div>
+      <button type="submit" class="btn">Insert user</button>
+    </form>
+  </div>
+
+</section>
+
+{% endblock %}

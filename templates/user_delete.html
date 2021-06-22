@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3 class="text-center title">Delete User account</h3>
+<hr class="line-blue">
+<section >
+    <div class="container text-center">
+        <form method="post">
+            <div class="form-group">
+                <label>Give user's name: </label>
+
+                <input type="name" class="form-control" id="name" name="name" placeholder="User name">
+            </div>
+            <div class="form-group">
+                <label>Give user's email: </label>
+
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label>Give user's password: </label>
+
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn">Delete user account</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

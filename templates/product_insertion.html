@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3 class="text-center title">Insert new product</h3>
+<hr class="line-blue">
+<section >
+    <div class="container text-center">
+        <form method="post">
+            <div class="form-group">
+                <label>Give the admin's email: </label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+            </div>
+
+
+            <br/><br/><br/><br/><br/><br/>
+            <div class="form-group">
+                <label>Give product code: </label>
+                <input  class="form-control" id="code" name="code" placeholder="Product code">
+                <br/><br/>
+            
+        
+    
+
+
+            
+            
+            <label>Give product's name: </label>
+            <input  class="form-control" id="name" name="name" placeholder="Product Name">
+            <br/><br/>
+            <label>Give product's price: </label>
+
+            <input  class="form-control" id="price" name="price" placeholder="Product Price">
+            <br/><br/>
+            <label>Give product's description: </label>
+
+            <input  class="form-control" id="description" name="description" placeholder="Product description">
+            <br/><br/>
+            <label>Give product's category: </label>
+
+            <input  class="form-control" id="category" name="category" placeholder="Product category">
+            <br/><br/>
+            <label>Give product's stock: </label>
+
+            <input  class="form-control" id="stock" name="stock" placeholder="Product stock">
+            <br/><br/><br/><br/><br/><br/>
+            <button type="submit" class="btn">Insert new product</button>
+            </div>
+        </form>   
+       
+    </div>  
+</section>
+
+{% endblock %}

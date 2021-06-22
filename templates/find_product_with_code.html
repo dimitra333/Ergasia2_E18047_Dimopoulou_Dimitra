@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3 class="text-center title">Find product by code</h3>
+<hr class="line-blue">
+<section >
+    <div class="container text-center">
+        <form method="post">
+            <div class="form-group">
+                <label>Give the admin's email: </label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label>Give search product code: </label>
+                <input  class="form-control" id="code" name="code" placeholder="Product code">
+            </div>
+            <button type="submit" class="btn">Search for product</button>
+        </form>
+    </div>
+</section>
+<section id="search-product">
+    <div class="container text-center">
+        <div class="product-box">
+            {% for f_product in found_product %}
+            <p>Name: {{f_product.name }}</p>
+            <p>Price: {{f_product.price }}</p>
+            <p>Description: {{f_product.description }}</p>
+            <p>Category: {{f_product.category }}</p>
+            <p>Stock: {{f_product.stock }}</p>
+            {% endfor %}
+        </div>
+        
+    </div>
+</section>
+
+{% endblock %}

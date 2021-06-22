@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     
+    
+    <title>DSMarkets Site</title>
+</head>
+
+<body>
+    {% block content %}
+    <form >
+<div id="content">
+   
+
+    <h1 class="text-center title">DSMarkets</h1>
+   <a href="user_connection" title="Connect user">User connection</a><br/><br/><br/>
+   <a href="user_insertion" title="Insert new user (Only for admins)">Insert new user</a><br/><br/><br/>
+   <a href="find_product_with_name" title="Product Search by name">Product Search by name</a><br/><br/><br/>
+   <a href="find_product_with_category" title="Product Search by category">Product Search by category</a><br/><br/><br/>
+   <a href="find_product_with_code" title="Product Search by code">Product Search by code</a><br/><br/><br/>
+   <a href="product_insertion" title="Product insertion">Product insertion (Only for admins)</a><br/><br/><br/>
+   <a href="product_delete" title="Delete product by code">Delete a product by code (Only for admins)</a><br/><br/><br/>
+   <a href="create_new_admin" title="Convert user to admin">Convert user to admin (Only for admins)</a><br/><br/><br/>
+   <a href="product_update" title="Update a product">Update a product (Only for admins)</a><br/><br/><br/>
+   <a href="add_product_to_cart" title="Add product to cart">Add product to cart (Only for customers)</a><br/><br/><br/>
+   <a href="delete_product_from_cart" title="Delete product from cart">Delete product from  cart (Only for customers)</a><br/><br/><br/>
+   <a href="show_cart_history" title="Show cart history">Show cart history</a><br/><br/><br/>
+   <a href="user_delete" title="Delete my account">Delete my account</a><br/><br/><br/>
+
+</div>
+</form> 
+{% endblock %}  
+</body>
+
+</html>

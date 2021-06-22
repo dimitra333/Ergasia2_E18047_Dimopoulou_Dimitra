@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3 class="text-center title">Cart history</h3>
+<hr class="line-blue">
+<section >
+    <div class="container text-center">
+        <form method="post">
+            <div class="form-group">
+                <label>Give  email: </label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+            </div>
+            
+            <button type="submit" class="btn">Show History</button>
+        </form>
+    </div>
+</section>
+<section id="search-product">
+    <div class="container text-center">
+        <div class="history-box">
+            {% for h in cart_history %}
+            <p>Email: {{ h.user_email }}</p>
+            <p>Product Code: {{ h.product_code }}</p>
+            <p>Quantity: {{h.quantity }}</p>
+            <p>Total Amount: {{h.value }}</p>
+            <p>Order Date: {{h.date }}</p>
+            <p>--------------------------------</p>
+            {% endfor %}
+        </div>
+        
+    </div>
+</section>
+
+{% endblock %}

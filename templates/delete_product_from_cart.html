@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3 class="text-center title">Insert new product</h3>
+<hr class="line-blue">
+<section >
+    <div class="container text-center">
+        <form method="post">
+            <div class="form-group">
+                <label>Give the user's email: </label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+            </div>
+
+
+            <br/><br/><br/><br/><br/><br/>
+            <div class="form-group">
+                <label>Give product code: </label>
+                <input  class="form-control" id="code" name="code" placeholder="Product code">
+                <br/><br/>
+            
+        
+    
+
+
+            
+            
+            <br/><br/><br/><br/>
+            <button type="submit" class="btn">Delete product from cart</button>
+            </div>
+        </form>   
+       
+    </div>  
+</section>
+
+{% endblock %}

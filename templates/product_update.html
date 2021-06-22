@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3 class="text-center title">Update a product in DB</h3>
+<hr class="line-blue">
+<section >
+    <div class="container text-center">
+        <form method="post">
+            <div class="form-group">
+              <label>Give admin's email: </label>
+
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label>Give search product code: </label>
+
+                <input  class="form-control" id="code" name="code" placeholder="Product code">
+            </div>
+            <button type="submit" class="btn">Search for product to update</button>
+            <br/><br/><br/><br/><br/>
+        
+     
+      <label>Give product's name: </label>
+
+        <input type="text" name="name" size="60" value="{{product.name}}"><br/><br/>
+        <label>Give product's description: </label>
+
+        <input type="text" name="description" size="60" value="{{product.description}}"><br/><br/>
+        <label>Give product's price: </label>
+
+        <input type="text" name="price" size="60" value="{{product.price}}"><br/><br/>
+        <label>Give product's category: </label>
+
+        <input type="text" name="category" size="60" value="{{product.category}}"><br/><br/>
+        <label>Give product's stock: </label>
+
+        <input type="text" name="stock" size="60" value="{{product.stock}}"><br/><br/><br/>
+
+        <button type="submit" class="btn">Update the product</button>
+    </div>
+    </section>
+  </form>
+</section>
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
